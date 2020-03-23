@@ -15,6 +15,7 @@ a {
   height: 920px;
   background-size: cover;
   background-position: center;
+  position: relative;
   h1 {
     margin: 0;
     color: white;
@@ -49,6 +50,18 @@ a {
       color: black;
     }
   }
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .Logos {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 40px;
+    margin: 100px 0;
+    justify-items: center;
+  }
 }
 .HeroGroup {
   margin: 0 auto;
@@ -80,6 +93,9 @@ a {
     }
     p {
       font-size: 24px;
+    }
+    .Logos {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
